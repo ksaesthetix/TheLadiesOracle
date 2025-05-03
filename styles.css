@@ -2,14 +2,8 @@
     --background-color: #ebe2d3;
     --text-color: #865456;
     --text-color-p: #ae9263;
-    --header-bg-color: #A97373;
-    --header-border-color: #000000;
-    --accent-color: #A97373;
     --button-bg-color: #5a4632;
     --button-hover-bg-color: #A97373;
-    --footer-bg-color: #A97373;
-    --footer-link-color: #5a4632;
-    --footer-link-hover-color: #d4a373;
 }
 
 body {
@@ -18,6 +12,10 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
     overflow: hidden; /* Prevents scrolling */
 }
@@ -83,47 +81,50 @@ ul li {
     color: var(--text-color);
 }
 
-footer {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer a {
-    color: var(--footer-link-color);
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: var(--footer-link-hover-color);
-    text-decoration: underline;
-}
-
 /* Coming Soon Section */
 .coming-soon {
     background-color: var(--background-color);
-    height: 100vh; /* Full height */
     text-align: center;
-    padding: 50px 20px;
-    min-height: 100vh; /* Ensures the section fills the viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
 }
 
-.coming-soon h2 {
-    font-size: 2.5em;
+.coming-soon img {
+    max-width: 300px; /* Ensure the image scales within the container */
+    height: auto; /* Maintain the aspect ratio */ 
+    margin: 0 auto 10px; /* Reduce the bottom margin to bring the <p> closer */
+    display: block; /* Treat the image as a block element for proper centering */
+}
+
+.coming-soon h1 {
+    font-size: 2.5rem;
     color: var(--text-color);
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .coming-soon p {
-    font-size: 1.2em;
-    margin: 10px 0;
-    color: var(--text-color-p)
+    font-size: 1.5rem;
+    color: var(--text-color-p);
+    margin-bottom: 20px;
+    margin-top: 0; /* Remove any top margin to ensure it's close to the image */
+    text-align: center;
 }
+
+.coming-soon .notify-btn {
+    display: inline-block;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.coming-soon .notify-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--text-color);
+}
+
 

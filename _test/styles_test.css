@@ -1,0 +1,129 @@
+:root {
+    --background-color: #ebe2d3;
+    --text-color: #865456;
+    --text-color-p: #ae9263;
+    --button-bg-color: #5a4632;
+    --button-hover-bg-color: #A97373;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--background-color); /* Set the entire background color */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .tagline {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .features, .download {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    /*border-bottom: 2px solid var(--accent-color);*/
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--text-color);
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 40px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.coming-soon img {
+    max-width: 300px; /* Ensure the image scales within the container */
+    height: auto; /* Maintain the aspect ratio */ 
+    margin: 0 auto 10px; /* Reduce the bottom margin to bring the <p> closer */
+    display: block; /* Treat the image as a block element for proper centering */
+}
+
+.coming-soon h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    font-size: 1.5rem;
+    color: var(--text-color-p);
+    margin-bottom: 20px;
+    margin-top: 0; /* Remove any top margin to ensure it's close to the image */
+    text-align: center;
+}
+
+.coming-soon .notify-btn {
+    display: inline-block;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.coming-soon .notify-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--text-color);
+}
+

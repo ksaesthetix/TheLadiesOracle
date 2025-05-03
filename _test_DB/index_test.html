@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Example</title>
+</head>
+<body>
+  <h1>Data from SQLite Database</h1>
+  <div id="data"></div>
+
+  <script>
+    // Fetch data from the backend API
+    fetch('https://redesigned-funicular-7x7vwpx9wr9hw66w-4000.app.github.dev/api/data')
+      .then(response => {
+        console.log('Response received:', response);
+        return response.json();
+      })
+      .then(data => {
+        console.log('Data received:', data);
+        const container = document.getElementById('data');
+        data.forEach(row => {
+          const div = document.createElement('div');
+          div.textContent = JSON.stringify(row);
+          container.appendChild(div);
+        });
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
+
