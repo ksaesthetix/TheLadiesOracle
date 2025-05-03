@@ -103,8 +103,6 @@ footer a:hover {
 /* Coming Soon Section */
 .coming-soon {
     background-color: var(--background-color);
-    /*border: 2px solid var(--accent-color);
-    border-radius: 10px;*/
     height: 100vh; /* Full height */
     text-align: center;
     padding: 50px 20px;
