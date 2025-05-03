@@ -5,9 +5,9 @@
     --button-bg-color: #5a4632;
     --button-hover-bg-color: #A97373;
 }
-
+@import url('https://fonts.cdnfonts.com/css/donau-uppercase');
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Donau Uppercase', sans-serif;
     background-color: var(--background-color); /* Set the entire background color */
     color: var(--text-color);
     margin: 0;
