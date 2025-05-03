@@ -1,28 +1,100 @@
+:root {
+    --background-color: #f4f1ea;
+    --text-color: #5a4632;
+    --header-bg-color: #B5817D;
+    --header-border-color: #5a4632;
+    --accent-color: #B5817D;
+    --button-bg-color: #5a4632;
+    --button-hover-bg-color: #B5817D;
+    --footer-bg-color: #B5817D;
+    --footer-link-color: #5a4632;
+    --footer-link-hover-color: #d4a373;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
     text-align: center;
 }
+
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--header-bg-color);
+    color: #fff;
     padding: 20px 0;
+    border-bottom: 5px solid var(--header-border-color);
 }
+
 header h1 {
+    font-size: 3em;
     margin: 0;
-    font-size: 2.5em;
 }
+
+header .tagline {
+    font-style: italic;
+    margin-top: 10px;
+}
+
 main {
     padding: 20px;
 }
+
+.about, .features, .download {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type:none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--button-bg-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-bg-color);
+    color: var(--text-color);
+}
+
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--footer-bg-color);
+    color: #fff;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--footer-link-hover-color);
+    text-decoration: underline;
 }
