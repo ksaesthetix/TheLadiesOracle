@@ -5,14 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ladies Oracle - Coming Soon</title>
     <link href="https://fonts.cdnfonts.com/css/donau-uppercase" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles_test.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <main>
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="/components/images/logo.png" alt="Logo">
+            </a>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+                <li><a href="#" data-aos="fade-down" data-aos-delay="200">About</a></li>
+                <li><a href="#" data-aos="fade-down" data-aos-delay="300">Services</a></li>
+                <li><a href="#" data-aos="fade-down" data-aos-delay="400">Shop</a></li>
+                <li><a href="#" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
+            </ul>        
+        </div>
+    </nav>
+    <!--Section 1-->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>WELCOME TO THE LADIES ORACLE</h1>
+
+                <p>Your one-stop destination for all things feminine.</p>
+
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+        
+            <div class="hero-image-container" data-aos="fade-left">
+                <img src="/components/images/logo.png" alt="" class="hero-image">
+                <div class="spinning-icons">
+                    <div class="icon-obit"style="top: 10%;left: 10%;">
+                        <i class="fa-solid fa-star" ></i>
+                    </div>
+                    <div class="icon-obit"style="top: 70%;left: 80%;">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="icon-obit"style="top: 80%;left: 20%;">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="icon-obit"style="top: 20%;left: 85%;">
+                        <i class="fa-solid fa-meteor"></i>
+                </div>       
+            </div>
+        </div>    
+    </section>   
+
+    <!--Section 2-->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best services for</p>
+        </div>
+    </section>
+
+    <!--Section 3-->
+    <section class="services">
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <p>Explore our wide range of services designed just for you.</p>
+        </div>
+    </section>
+
+    <!--Section 4-->
+    <section class="shop-section">
+        <div class="shop-header" data-aos="fade-up">
+            <h2>SHOP NOW</h2>
+            <p>Discover our exclusive products and offers.</p>
+        </div>
+        <div class="filter-bar">
+            <div class="filter-buttons"data-aos="fade-right">
+                <button class="filter-btn active">ALL</button>
+                <button class="filter-btn ">READINGS</button>
+                <button class="filter-btn ">APP ADD-ONS</button>
+                <button class="filter-btn ">MERCH</button>
+            </div>
+            <select class="sort-select" data-aos="fade-left">
+                <option value="newest">NEWEST FIRST</option>
+                <option value="price">PRICE</option>
+                <option value="popularity">POPULARITY</option>
+                <option value="rating">RATING</option>
+            </select>    
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="sale-bage">SALE</div>
+                <div class="product-image">
+                    <img src="/components/images/tarot_card.png" alt="Product Image">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="product-category">READINGS</div>
+                    <h3 class="product-title">LOVE</h3>
+                    <div class="product-price">£9.99</div>
+                    <div class="product-action">
+                        <button class="filter-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="sale-bage">SALE</div>
+                <div class="product-image">
+                    <img src="/components/images/logo.png" alt="Product Image">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="product-category">READINGS</div>
+                    <h3 class="product-title">LOVE</h3>
+                    <div class="product-price">£9.99</div>
+                    <div class="product-action">
+                        <button class="filter-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="sale-bage">SALE</div>
+                <div class="product-image">
+                    <img src="/components/images/logo.png" alt="Product Image">
+                    <div class="product-overlay">
+                        <button class="quick-view">Quick View</button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="product-category">READINGS</div>
+                    <h3 class="product-title">LOVE</h3>
+                    <div class="product-price">£9.99</div>
+                    <div class="product-action">
+                        <button class="filter-btn">Add to Cart</button>
+                        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards as needed -->
+
+        </div>
+    </section>    
+    <!--<main>
         <section class="coming-soon">
             <img src="components/images/logo.png" alt="Decorative SVG">
             <p>COMING SOON</p>
         </section>
-    </main>
+    </main>-->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
