@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta and Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ladies Oracle</title>
+    <!-- Fonts and Icons -->
     <link href="https://fonts.cdnfonts.com/css/donau-uppercase" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles_test.css">
+    <!-- Animation on Scroll Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!--Navigation-->
+    <!-- ================= NAVIGATION BAR ================= -->
     <nav class="navbar">
         <div class="nav-content">
+            <!-- Logo -->
             <a href="#" class="logo">
                 <img src="/components/images/logo.png" alt="Logo">
             </a>
+            <!-- Hamburger Menu Icon (for mobile) -->
             <div class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="#home" data-aos="fade-down" data-aos-delay="100">Home</a></li>
                 <li><a href="#about" data-aos="fade-down" data-aos-delay="200">About</a></li>
@@ -28,30 +35,29 @@
             </ul>        
         </div>
     </nav>
-    <!--Section 1-->
+
+    <!-- ================= HERO SECTION ================= -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right">
                 <h1>WELCOME TO THE LADIES ORACLE</h1>
-
                 <p>Your one-stop destination for all things feminine.</p>
-
                 <a href="#" class="cta-button">Get Started</a>
             </div>
-        
             <div class="hero-image-container" data-aos="fade-left">
                 <img src="/components/images/logo.png" alt="" class="hero-image">
+                <!-- Decorative Spinning Icons -->
                 <div class="spinning-icons">
-                    <div class="icon-obit"style="top: 10%;left: 10%;">
-                        <i class="fa-solid fa-star" ></i>
+                    <div class="icon-obit" style="top: 10%; left: 10%;">
+                        <i class="fa-solid fa-star"></i>
                     </div>
-                    <div class="icon-obit"style="top: 70%;left: 80%;">
+                    <div class="icon-obit" style="top: 70%; left: 80%;">
                         <i class="fa-solid fa-moon"></i>
                     </div>
-                    <div class="icon-obit"style="top: 80%;left: 20%;">
+                    <div class="icon-obit" style="top: 80%; left: 20%;">
                         <i class="fa-solid fa-moon"></i>
                     </div>
-                    <div class="icon-obit"style="top: 20%;left: 85%;">
+                    <div class="icon-obit" style="top: 20%; left: 85%;">
                         <i class="fa-solid fa-meteor"></i>
                     </div>         
                 </div>
@@ -59,7 +65,7 @@
         </div>        
     </section>   
 
-    <!--Section 2-->
+    <!-- ================= ABOUT SECTION ================= -->
     <section class="about" id="about">
         <div class="about-content">
             <h2>About Us</h2>
@@ -70,6 +76,7 @@
                 we are here to support your journey. Our team combines years of experience, compassion, and a passion for helping others. 
                 Join us and unlock the power within!
             </p>
+            <!-- Highlights List -->
             <div class="about-highlights">
                 <ul>
                     <li><i class="fa-solid fa-star"></i> Personalized Readings</li>
@@ -80,18 +87,14 @@
             </div>
         </div>
     </section>
-    </br>
-    <!--Section 3-->
+
+    <!-- ================= SERVICES & APP DOWNLOAD SECTION ================= -->
     <section class="services" id="services">
         <div class="services-content">
             <h2>Our Services</h2>
-            </br>
             <p>Explore our wide range of services designed just for you.</p>
-            </br>
             <h3>Download Our App</h3>
-            </br>
             <p>Get The Ladies Oracle app for your device and enjoy exclusive features!</p>
-            </br>
             <div class="download-buttons">
                 <a href="#" class="btn app-btn">
                     <i class="fab fa-apple"></i> App Store
@@ -99,21 +102,23 @@
                 <a href="#" class="btn app-btn">
                     <i class="fab fa-google-play"></i> Google Play
                 </a>
-     </div>
+            </div>
+        </div>
     </section>
 
-    <!--Section 4-->
+    <!-- ================= SHOP SECTION ================= -->
     <section class="shop-section" id="shop">
         <div class="shop-header" data-aos="fade-up">
             <h2>SHOP NOW</h2>
             <p>Discover our exclusive products and offers.</p>
         </div>
+        <!-- Filter and Sort Bar -->
         <div class="filter-bar">
-            <div class="filter-buttons"data-aos="fade-right">
+            <div class="filter-buttons" data-aos="fade-right">
                 <button class="filter-btn active">ALL</button>
-                <button class="filter-btn ">READINGS</button>
-                <button class="filter-btn ">APP ADD-ONS</button>
-                <button class="filter-btn ">MERCH</button>
+                <button class="filter-btn">READINGS</button>
+                <button class="filter-btn">APP ADD-ONS</button>
+                <button class="filter-btn">MERCH</button>
             </div>
             <select class="sort-select" data-aos="fade-left">
                 <option value="newest">NEWEST FIRST</option>
@@ -122,7 +127,9 @@
                 <option value="rating">RATING</option>
             </select>    
         </div>
+        <!-- Product Grid -->
         <div class="product-grid">
+            <!-- Example Product Card -->
             <div class="product-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="sale-bage">SALE</div>
                 <div class="product-image">
@@ -141,51 +148,16 @@
                     </div>
                 </div>
             </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="sale-bage">SALE</div>
-                <div class="product-image">
-                    <img src="/components/images/logo.png" alt="Product Image">
-                    <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <div class="product-category">READINGS</div>
-                    <h3 class="product-title">LOVE</h3>
-                    <div class="product-price">£9.99</div>
-                    <div class="product-action">
-                        <button class="filter-btn">Add to Cart</button>
-                        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="sale-bage">SALE</div>
-                <div class="product-image">
-                    <img src="/components/images/logo.png" alt="Product Image">
-                    <div class="product-overlay">
-                        <button class="quick-view">Quick View</button>
-                    </div>
-                </div>
-                <div class="product-details">
-                    <div class="product-category">READINGS</div>
-                    <h3 class="product-title">LOVE</h3>
-                    <div class="product-price">£9.99</div>
-                    <div class="product-action">
-                        <button class="filter-btn">Add to Cart</button>
-                        <button class="wishlist-btn"><i class="fa-solid fa-heart"></i></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more product cards as needed -->
+            <!-- Repeat product-card for more products -->
+            <!-- ... -->
         </div>
     </section>
-    </br>   
+
+    <!-- ================= CONTACT SECTION ================= -->
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="row">
+                <!-- Contact Info -->
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Us</h1>
                     <p><i class="fas fa-paper-plane"></i> <a href="mailto:contact.theladiesoracle@gmail.com">contact.theladiesoracle@gmail.com</a></p>
@@ -197,6 +169,7 @@
                         <a href=""><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
+                <!-- Contact Form -->
                 <div class="contact-right">
                     <form id="contact-form">
                         <input type="text" name="Name" placeholder="Enter Your Name" required>
@@ -208,15 +181,12 @@
             </div>
         </div>    
     </section>
-    <!--<main>
-        <section class="coming-soon">
-            <img src="components/images/logo.png" alt="Decorative SVG">
-            <p>COMING SOON</p>
-        </section>
-    </main>-->
+
+    <!-- ================= SCRIPTS ================= -->
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        // Initialize Animation on Scroll
         AOS.init();
     </script>
 </body>
