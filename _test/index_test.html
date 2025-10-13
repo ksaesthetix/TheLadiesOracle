@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Ladies Oracle - Coming Soon</title>
+    <title>The Ladies Oracle</title>
     <link href="https://fonts.cdnfonts.com/css/donau-uppercase" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles_test.css">
@@ -20,16 +20,16 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#" data-aos="fade-down" data-aos-delay="100">Home</a></li>
-                <li><a href="#" data-aos="fade-down" data-aos-delay="200">About</a></li>
-                <li><a href="#" data-aos="fade-down" data-aos-delay="300">Services</a></li>
-                <li><a href="#" data-aos="fade-down" data-aos-delay="400">Shop</a></li>
-                <li><a href="#" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
+                <li><a href="#home" data-aos="fade-down" data-aos-delay="100">Home</a></li>
+                <li><a href="#about" data-aos="fade-down" data-aos-delay="200">About</a></li>
+                <li><a href="#services" data-aos="fade-down" data-aos-delay="300">Services</a></li>
+                <li><a href="#shop" data-aos="fade-down" data-aos-delay="400">Shop</a></li>
+                <li><a href="#contact" data-aos="fade-down" data-aos-delay="500">Contact</a></li>
             </ul>        
         </div>
     </nav>
     <!--Section 1-->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right">
                 <h1>WELCOME TO THE LADIES ORACLE</h1>
@@ -59,23 +59,50 @@
     </section>   
 
     <!--Section 2-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-content">
             <h2>About Us</h2>
-            <p>We are dedicated to providing the best services for</p>
+            <p>
+                The Ladies Oracle is your trusted companion for guidance, inspiration, and empowerment. 
+                Our mission is to help women discover their inner strength and wisdom through personalized readings, 
+                holistic services, and a supportive community. Whether you're seeking clarity, self-care, or a little magic in your life, 
+                we are here to support your journey. Our team combines years of experience, compassion, and a passion for helping others. 
+                Join us and unlock the power within!
+            </p>
+            <div class="about-highlights">
+                <ul>
+                    <li><i class="fa-solid fa-star"></i> Personalized Readings</li>
+                    <li><i class="fa-solid fa-heart"></i> Holistic Services</li>
+                    <li><i class="fa-solid fa-users"></i> Supportive Community</li>
+                    <li><i class="fa-solid fa-moon"></i> Empowerment & Inspiration</li>
+                </ul>
+            </div>
         </div>
     </section>
-
+    </br>
     <!--Section 3-->
-    <section class="services">
+    <section class="services" id="services">
         <div class="services-content">
             <h2>Our Services</h2>
+            </br>
             <p>Explore our wide range of services designed just for you.</p>
-        </div>
+            </br>
+            <h3>Download Our App</h3>
+            </br>
+            <p>Get The Ladies Oracle app for your device and enjoy exclusive features!</p>
+            </br>
+            <div class="download-buttons">
+                <a href="#" class="btn app-btn">
+                    <i class="fab fa-apple"></i> App Store
+                </a>
+                <a href="#" class="btn app-btn">
+                    <i class="fab fa-google-play"></i> Google Play
+                </a>
+     </div>
     </section>
 
     <!--Section 4-->
-    <section class="shop-section">
+    <section class="shop-section" id="shop">
         <div class="shop-header" data-aos="fade-up">
             <h2>SHOP NOW</h2>
             <p>Discover our exclusive products and offers.</p>
@@ -152,9 +179,34 @@
                 </div>
             </div>
             <!-- Add more product cards as needed -->
-
         </div>
-    </section>    
+    </section>
+    </br>   
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fas fa-paper-plane"></i> <a href="mailto:contact.theladiesoracle@gmail.com">contact.theladiesoracle@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square-alt"></i> <a href="tel:07532323212">07532323212</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </section>
     <!--<main>
         <section class="coming-soon">
             <img src="components/images/logo.png" alt="Decorative SVG">
